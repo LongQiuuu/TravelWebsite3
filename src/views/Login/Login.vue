@@ -110,7 +110,7 @@ export default {
     handleLogin() {
       // Handle login logic here
       axios
-        .post("http://localhost:8080/auth/login", null, {
+        .post("http://localhost:5173/login", null, {
           params: { username: this.loginAccount, password: this.loginPassword },
           withCredentials: true,
         })

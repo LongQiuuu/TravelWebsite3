@@ -1,6 +1,7 @@
 //管理用戶數據相關
 
 import { defineStore } from 'pinia';
+import { ref } from 'vue'; // 引入 ref 函数
 
 export const useUserStore = defineStore('user', () => {
   // 定義管理用戶數據的 state
