@@ -93,26 +93,18 @@ import LayoutFooter from '@/views/Layout/components/LayoutFooter.vue';
 </template>
 
 <script>
+import { useUserStore } from '@/stores/user';
 import axios from "axios";
-//test pinia
-import { mapStores } from "pinia";
-import {useAuthenticationStore} from '@/stores/authentication'
-
 
 export default {
   data() {
     return {
       isLogin: true,
-      loginAccount: "",
-      loginPassword: "",
       registerName: "",
       registerAccount: "",
       registerPassword: "",
+      registerPhone: "",
     };
-  },
-  //test pinia
-  computed: {
-    ...mapStores(useAuthenticationStore)
   },
   methods: {
     handleLogin() {
@@ -129,10 +121,10 @@ export default {
             : window.location.reload();
         });
       console.log("Login with", this.loginAccount, this.loginPassword);
-      // test pinia
-      this.authenticationStore.credCredentials = 20;
-      console.log(this.authenticationStore);
-      console.log(this.authenticationStore.credCredentials);
+      
+      // 更新 Pinia 中的登錄帳號和密碼
+      const userStore = useUserStore();
+      userStore.setLoginCredentials(this.loginAccount, this.loginPassword);
     },
     handleRegister() {
       // Handle register logic here
