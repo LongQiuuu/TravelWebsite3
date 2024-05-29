@@ -19,7 +19,7 @@ import LayoutFooter from '@/views/Layout/components/LayoutFooter.vue';
                   <div class="col-1"></div>
                   <div class="col"><img src="/src/views/Layout/img/logo.png" style="width: 60%;" /></div>
                 </div>
-                
+                <AAAA></AAAA>
                 <form @submit.prevent="handleLogin" class="flip-card__form">
                   <input
                     type="text"
