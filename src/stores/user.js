@@ -22,4 +22,8 @@ export const useUserStore = defineStore('user', () => {
     loginPassword,
     setLoginCredentials,
   };
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 87af88f (pinia)
