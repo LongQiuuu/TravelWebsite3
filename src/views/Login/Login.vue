@@ -4,6 +4,9 @@ import LayoutFooter from '@/views/Layout/components/LayoutFooter.vue';
 </script>
 
 <template>
+  <CCCC>
+    
+  </CCCC>
   <LayoutHeader></LayoutHeader>
   <div class="login">
     <main>
