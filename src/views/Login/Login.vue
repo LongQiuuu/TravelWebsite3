@@ -5,7 +5,7 @@ import LayoutFooter from '@/views/Layout/components/LayoutFooter.vue';
 
 <template>
   <CCCC>
-    
+    "操你媽"
   </CCCC>
   <LayoutHeader></LayoutHeader>
   <div class="login">
