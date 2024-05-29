@@ -15,6 +15,7 @@ import LayoutFooter from '@/views/Layout/components/LayoutFooter.vue';
             <span class="card-side"></span>
             <div class="flip-card__inner">
               <div class="flip-card__front">
+                <aaaaaaaa></aaaaaaaa>
                 <div class="row">
                   <div class="col-1"></div>
                   <div class="col"><img src="/src/views/Layout/img/logo.png" style="width: 60%;" /></div>
